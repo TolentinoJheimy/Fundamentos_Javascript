@@ -1,15 +1,24 @@
+console.log("conexion correcta");
+
 // Declaración de variables
-let colores =  
-    [ "rojo", "verde", "negro"]
-     
+let colores = [" Rojo", " Azul", " Negro"];
+let identidad = { nombre: "jheimy", correo: "jheimytolentino@liceovvh.cl", edad: 16 };
+let esEstudiante = true;
 
-;
-const Identidad =   { 
-    nombre: "jheimy",correo: "jheimytolentino@liceovvh.cl", edad: 16}
-
-const esEstudiante = true;
 
 // Funciones para mostrar cada valor con alert()
-function mostrarcolores() {
-    alert("colores: " + colores);
+function mostrarColores() {
+    alert("Colores :" + colores);
+}
+
+function mostrarIdentidad() {
+    alert(JSON.stringify(identidad));
+}
+
+function mostrarEstudiante(){
+    alert(esEstudiante)
+}
+
+function mostrarResumen() {
+    alert("Hola, soy " + identidad.nombre + " tengo " + identidad.edad + " y mis colores favoritos son : " + colores);
 }
