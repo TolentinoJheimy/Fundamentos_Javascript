@@ -173,3 +173,64 @@ else{
     alert(`La palabra mas larga es ${pal1} con ${pal1.length} carácteres`)
 }
 }
+/* 12.- Validar correo electrónico
+Pide al usuario que ingrese un correo. Verifica si el texto contiene el símbolo @.
+ Si lo tiene, muestra "Correo válido", si no, "Correo inválido". */
+ function validarEmail() {
+    let correo = prompt("Ingresa tu correo")
+    if(correo.includes("@")){
+        alert("Correo Válido")
+    } else {
+        alert("Correo Inválido")
+    }
+ }
+
+ /*13.- Verificar si un número es positivo o negativo
+Solicita un número. Muestra si es positivo, negativo o cero. */
+
+function verificadorNumero(){
+let numero =  parseInt(prompt("Ingrese un número: "))
+
+if (numero > 0){
+     alert("El número es positivo")
+}
+   
+else if(numero < 0) {
+    alert("El número es negativo")
+}
+    
+    
+else{
+    alert("El número es cero")
+}
+}
+
+/* 14.- Saludo personalizado según hora
+Pide la hora actual (en formato 24 horas). Si es antes de las 12,
+ muestra "Buenos días", si es entre 12 y 18, "Buenas tardes",
+  y si es mayor a 18, "Buenas noches". */
+
+
+function saludoPersonalizado(){
+let hora = parseInt(prompt("Ingrese la Hora: "))
+if (hora >= 0 && hora < 12) {
+    alert("Buenos días");
+} else if (hora >= 12 && hora < 18) {
+    alert("Buenas tardes");
+} else if (hora >= 18 && hora <= 23) {
+    alert("Buenas noches");
+}
+}
+
+/* 15.- Verificar si una palabra contiene la letra "e"
+Solicita una palabra. Verifica si contiene la letra "e" (minúscula).
+Si la tiene, muestra "Contiene la letra 'e'", 
+si no, muestra "No contiene la letra 'e'". */
+function verificarPalabra(){
+const palabra = prompt("Ingrese una palabra:");
+if (palabra.includes('e')) {
+    alert("Contiene la letra 'e'");
+} else {
+    alert("No contiene la letra 'e'");
+}
+}   
