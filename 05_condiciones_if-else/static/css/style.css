@@ -1,27 +1,30 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: sans-serif;
     text-align: center;
     text-align: center;
 }
 
 
-button{
+button {
     width: 150px;
     height: 50px;
-    border-radius:10px ;
+    border-radius: 10px;
     cursor: pointer;
-    
+
 }
-button:active{
-    transform: scale(1.09) ;
-    
+
+button:active {
+    transform: scale(1.09);
+
 }
-.row{
+
+.row {
     display: flex;
     align-items: center;
     justify-content: center;
