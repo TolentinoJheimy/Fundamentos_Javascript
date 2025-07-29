@@ -8,9 +8,7 @@ body{
     text-align: center;
     text-align: center;
 }
-main{
 
-}
 
 button{
     width: 150px;
@@ -22,7 +20,4 @@ button{
 button:active{
     transform: scale(1.09) ;
     
-}
-div{
-  
 }

@@ -148,11 +148,28 @@ function licencia() {
     if (edad >= 18 && lice == "si") {
         alert("Puede conducir")
     }
-    else if (edad < 18 && lice == "no"){
+    else if (edad < 18 && lice == "no") {
         alert("No puede Conducir")
     }
-    else{
+    else {
         alert("ingresa valores válidos")
     }
 };
 
+/* Comparar la longitud de dos palabras
+Solicita dos palabras con prompt(). Compara cuántas letras tiene cada una y muestra cuál es más larga o si tienen el mismo largo.
+ */
+function encontrarPalabraLarga() {
+let pal1 = prompt("Ingrese primera palabra")
+let pal2 = prompt("Ingrese segunda palabra")
+if (pal1 == "" && pal2 == ""){
+    alert("Ingrese algun valor para trabajar...")
+} else if(pal1.length < pal2.length){
+    alert(`La palabra más larga es ${pal2} con ${pal2.length} carácteres`)
+} else if(pal1.length == pal2.length) {
+    alert(`Las palabras ${pal2} y ${pal1} tienen mismo largo con : \n ${pal1.leght} carácteres`)
+}
+else{
+    alert(`La palabra mas larga es ${pal1} con ${pal1.length} carácteres`)
+}
+}
