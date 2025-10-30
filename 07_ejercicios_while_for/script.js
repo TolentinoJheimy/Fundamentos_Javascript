@@ -75,7 +75,56 @@ Pide un número al usuario e imprime su tabla de multiplicar del 1 al 10 en un s
 */
 
 function tablaMultiplicar() {
-    let count = 1;
-    let 
+    let numero = parseInt(prompt("Ingresa un número para la tabla de multiplicar"));
+    let tabla = "";
+    for (let i = 1; i <= 10; i++) {
+        tabla += numero + " x " + i + " = " + (numero * i) + "\n";
+    }
+    alert(tabla)
+}
+/*  Bucle for: Números pares hasta n
+Solicita un número n e imprime todos los números pares desde 1 hasta n usando un bucle for.*/
+function numpares() {
+    let n = parseInt(prompt("Ingrese un numero para encontrar pares"))
+    let pares = "";
+    for (let i = 1; i <= n; i++) {
+        if (i % 2 == 0) {
+            pares += ` ${i}`
+        }
+    }
+    alert(pares)
+}
+/*  Bucle for: Contar letras de una palabra
+Pide una palabra al usuario y muestra cuántas letras tiene usando un bucle for para recorrerla.*/
+function contadorPalabra() {
+    let palabra = prompt("Ingrese una Palabra")
+    let contador = 0;
+    for (let i = 0; i < palabra.length; i++) {
+        contador++;
+    }
+    alert("La palabra " + palabra + " tiene " + contador + " letras.")
+}
+/*Bucle for: Calcular factorial
+Solicita un número n e imprime el factorial de ese número (n × n-1 × n-2 × … × 1) usando un bucle for.*/
+function calculoFactorial() {
+    let numero = parseInt(prompt("Igrese un número para calcular su factorial"))
+    let factorial = 1;
+    let largo = "1"
+    for (let i = 2; i <= numero; i++) {
+        largo += ` * ${i}`
+        factorial *= i;
+    }
+    alert(`El factorial de ${numero} es : ${largo} = ${factorial}`);
+}
+/*Bucle for: Suma de números impares hasta n
+Pide un número n y suma todos los números impares desde 1 hasta n.
+Muestra el resultado con alert.*/
+function sumaImpares() {
+    let n = parseInt(prompt("Ingrese un número para sumar los impares hasta el"))
+    let suma = 0;
+    for (let i = 1; i <= n; i += 2) {
+        suma += i;
+    }
+    alert("La suma de los impares hasta " + n + " es " + suma)
 }
 
